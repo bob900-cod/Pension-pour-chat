@@ -12,11 +12,11 @@ int motorPin2 = 33;  // Broche pour le moteur
 MFRC522 mfrc522(SS_PIN, RST_PIN);  // Création d'un objet MFRC522
 
 Servo myServo;  // Création d'un objet de type Servo
-//ip arduino 172.16.13.8
+
 
 int ledPin = 13;  // Pin de la LED
-int authorizedBadge1[5] = {197,15,136,42,104};  // Premier badge autorisé
-int authorizedBadge2[5] = {6,174,123,161,114};  // Second badge autorisé 
+int authorizedBadge1[5] = {197,15,136,42,104};  // Premier badge autorisé(exemple)
+int authorizedBadge2[5] = {6,174,123,161,114};  // Second badge autorisé (exemple)
 unsigned long lastUsageTime = 0; // Variable pour stocker le temps de la dernière utilisation
 unsigned long usageInterval = 5000; // Intervalle minimum entre deux utilisations (en millisecondes)
 
